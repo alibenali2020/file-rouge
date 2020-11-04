@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>espoir</title>
+
+    <link rel="stylesheet" type="text/css" href="ESPOIR.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+ 
+</head>
+<body>
+    <!------------------------------debut navbar----------------------------- -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+      <a class="navbar-brand" href="file:///home/alibenali/Bureau/espoir-20201104T073027Z-001/espoir/Accueil.html"><img src="img/téléchargement.png" class="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto ">
+          <li class="nav-item active">
+            <a class="nav-link" href="file:///home/alibenali/Bureau/espoir-20201104T073027Z-001/espoir/Accueil.html">Accueil <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="file:///home/alibenali/Bureau/espoir-20201104T073027Z-001/espoir/Apropos.html">Apropos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="file:///home/alibenali/Bureau/espoir-20201104T073027Z-001/espoir/Forum.html">Forum</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="file:///home/alibenali/Bureau/espoir-20201104T073027Z-001/espoir/Mobilit%C3%A9.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             Equipements
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="file:///home/alibenali/Bureau/espoir-20201104T073027Z-001/espoir/Mobilit%C3%A9.html">Mobilité</a>
+              <a class="dropdown-item" href="file:///home/alibenali/Bureau/espoir-20201104T073027Z-001/espoir/Cuisine.html">Cuisine</a>
+              
+              <a class="dropdown-item" href="file:///home/alibenali/Bureau/espoir-20201104T073027Z-001/espoir/Confort.html">Confort</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="file:///home/alibenali/Bureau/espoir-20201104T073027Z-001/espoir/Contact.html">Contact</a>
+
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="file:///home/alibenali/Bureau/espoir-20201104T073027Z-001/espoir/panier.html"><img src="img/shopping-cart.png" class="logo2" alt=""></a>
+
+          </li>
+        </ul>
+       
+      </div>
+      <!-------------------------------------debut modal--------------------------------------------->
+   <!-- Button trigger modal -->
+   <button type="button" class="btn  btn-success mr-3" data-toggle="modal" data-target="#exampleModal">
+    conexion
+    </button>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+    <div class="modal-body">
+      <form action="/action_page.php">
+        <div class="form-group">
+          <label for="email">Email address:</label>
+          <input type="email" class="form-control" id="email">
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" id="pwd">
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox"> Remember me</label>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form> 
+    </div>
+    <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    <button type="button" class="btn btn-primary">Save changes</button>
+    </div>
+    </div>
+    </div>
+    </div>
+                  </li>
+                  
+            <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary mr-3" data-toggle="modal" data-target="#exampleModal2">
+    inscription
+    </button>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+    <div class="modal-body">
+      <form action="/action_page.php">
+        <div class="form-group">
+          <label for="text">Prénom:</label>
+          <input type="text" class="form-control" id="Prénom">
+        </div>
+        <div class="form-group">
+          <label for="text">Nom:</label>
+          <input type="text" class="form-control" id="Nom">
+        </div>
+        <div class="form-group">
+          <label for="email">Email address:</label>
+          <input type="email" class="form-control" id="email">
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" id="pwd">
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox"> Remember me</label>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form> 
+    </div>
+    <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    <button type="button" class="btn btn-primary">Save changes</button>
+    </div>
+    </div>
+    </div>
+    </div>
+                  </li>
+                </ul>
+              </div>
+
+    <!---------------------------------------------finmodal--------------------------------->
+  </nav>     	    	
+
+<!-- -----------------------------fin de navbr---------------------------------->
+
+<!-----------------------------debut de bloc 1------------------------------------------->
+<div class="container">
+  <div class="row " id="bloc1">
+    <div class="col-md-4 col-sm-6  ">
+         <div class="card mb-3" style="max-width: 540px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="img/mobilité/rampe-valise-en-fibre-de-verre-180cm.jpg" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Rampe valise en fibre de verre - 180 cm</h5>
+        <p class="card-text">Cette rampe en fibre de verre est légère et se transporte.</p>
+<h6>599,00 dt</h6>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+
+    </div>
+    </div>
+  </div>
+</div> 
+    </div>
+     <div class="col-md-4 col-sm-6  ">
+          <div class="card mb-3" style="max-width: 540px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="img/mobilité/rampe-seuil.jpg" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Rampe-seuil</h5>
+        <p class="card-text">Rampe renforcée pour passage charge lourde (transpalette</p>
+<h6>228,00 dt</h6>
+        <button type="button" class="btn btn-secondary">Ajouter au panier</button>
+
+    </div>
+    </div>
+  </div>
+</div>
+    </div>
+     <div class="col-md-4 col-sm-6  ">
+      <div class="card mb-3" style="max-width: 540px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="img/mobilité/paire-de-rampes-telescopiques-2-m-renforcees.jpg" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">paire-de-rampes-telescopiques-2-m-renforcees</h5>
+        <p class="card-text">Paire de rampes télescopiques en aluminium, renforcées.</p>
+<h6>309,00 dt</h6>
+        <button type="button" class="btn btn-secondary">Ajouter au panier</button>
+
+    </div>
+    </div>
+  </div>
+</div>    
+    </div>
+    
+  </div>
+</div>
+<!--------------------------------fin de boc 1----------------------------------------->
+<!------------------------------debut bloc2 ------------------------------------------------->
+<div class="container">
+  <div class="row " id="bloc1">
+    <div class="col-md-4 col-sm-6  ">
+         <div class="card mb-3" style="max-width: 540px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="img/mobilité/Rampes-d-acces-pour-PMR.jpg" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Les rampes d'accès</h5>
+        <p class="card-text">Rampe d'accès aluminium 50 cm
+          Rampe pour PMR Rampe d'accès aluminium en tôle damiers...
+          
+         </p>
+         <h6> 125,00 dt</dt></h6>
+      <button type="button" class="btn btn-secondary">Ajouter au panier</button>
+
+    </div>
+    </div>
+  </div>
+</div> 
+    </div>
+     <div class="col-md-4 col-sm-6  ">
+          <div class="card mb-3" style="max-width: 540px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="img/mobilité/rampe-d-acces-aluminium-50-cm.jpg" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Les rampes d'accès</h5>
+        <p class="card-text">Rampe passe seuil
+          Rampe d'accès Cette rampe double de passage de seuil..</p>
+          <h6> 129,00 dt</h6>
+
+      <button type="button" class="btn btn-secondary">Ajouter au panier</button>
+
+    </div>
+    </div>
+  </div>
+</div>
+    </div>
+     <div class="col-md-4 col-sm-6  ">
+      <div class="card mb-3" style="max-width: 540px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="img/mobilité/panneau-d-appel-rampe-carillon.jpg" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Panneau d'appel rampe PMR + carillon</h5>
+        <p class="card-text">Signalétique d’appel avec carillon pour l’installation...</p>
+          <h6>125 dt</h6>
+          <button type="button" class="btn btn-secondary">Ajouter au panier</button>
+
+    </div>
+    </div>
+  </div>
+</div>    
+    </div>
+    
+  </div>
+</div>
+<!----------------------------------fin bloc 2--------------------------------->
+<!----------------------------------debut bloc3---------------------------------->
+<div class="container">
+  <div class="row " id="bloc1">
+    <div class="col-md-4 col-sm-6  ">
+         <div class="card mb-3" style="max-width: 540px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="img/mobilité/fauteuil-roulant-classic-light-assise-41-cm.jpg" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">fauteuil-roulant-classic-light-assise-41-cm</h5>
+        <p class="card-text">Aide à la mobilité Fauteuil roulant manuel léger roues.</p>
+<h6>599,00 dt</h6>
+        <button type="button" class="btn btn-secondary">Ajouter au panier</button>
+
+    </div>
+    </div>
+  </div>
+</div> 
+    </div>
+     <div class="col-md-4 col-sm-6  ">
+          <div class="card mb-3" style="max-width: 540px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="img/mobilité/coussin-a-mousse-memoire-de-forme.jpg" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">coussin-a-mousse-memoire-de-forme</h5>
+        <p class="card-text">Mousse à mémoire Coussin de positionnement en prévention</p>
+<h6>102,50 dt</h6>
+        <button type="button" class="btn btn-secondary">Ajouter au panier</button>
+
+    </div>
+    </div>
+  </div>
+</div>
+    </div>
+     <div class="col-md-4 col-sm-6  ">
+      <div class="card mb-3" style="max-width: 540px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="img/mobilité/releve-jambe-droite-pour-fautuil-roulant-classic-light.jpg" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">releve-jambe-droite-pour-fautuil-roulant-classic-light</h5>
+        <p class="card-text">Accessoire pour le fauteuil Classic. Peut être utilisé.</p>
+<h6>59,50 dt</h6>
+        <button type="button" class="btn btn-secondary">Ajouter au panier</button>
+
+    </div>
+    </div>
+  </div>
+</div>    
+    </div>
+    
+  </div>
+</div>
+<!---------------------------------fin bloc3-------------------------------------->
+<!-----------------------------------debut bloc4----------------------------->
+<div class="container">
+  <div class="row " id="bloc1">
+    <div class="col-md-4 col-sm-6  ">
+         <div class="card mb-3" style="max-width: 540px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="img/mobilité/tablette-pour-fauteuil-roulant-double-face.jpg" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">tablette-pour-fauteuil-roulant-double-face</h5>
+        <p class="card-text">Tablette fixation par velcro S'adaptant sur fauteuil.</p>
+     <h6>64,90 dt</h6>
+      <button type="button" class="btn btn-secondary">Ajouter au panier</button>
+
+    </div>
+    </div>
+  </div>
+</div> 
+    </div>
+     <div class="col-md-4 col-sm-6  ">
+          <div class="card mb-3" style="max-width: 540px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="img/mobilité/poncho-universel.jpg" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">poncho-universel</h5>
+        <p class="card-text">Vêtement de pluie intégral avec capuche, il est 100%</p>
+<h6>59,00 dt</h6>
+        <button type="button" class="btn btn-secondary">Ajouter au panier</button>
+
+    </div>
+    </div>
+  </div>
+</div>
+    </div>
+     <div class="col-md-4 col-sm-6  ">
+      <div class="card mb-3" style="max-width: 540px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="img/mobilité/fauteuil-roulant-classic-light-assise-45-cm.jpg" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">fauteuil-roulant-classic-light-assise-45-cm</h5>
+        <p class="card-text">Aide à la mobilité Fauteuil roulant manuel léger roues</p>
+<h6>599,00 dt</h6>
+        <button type="button" class="btn btn-secondary">Ajouter au panier</button>
+
+    </div>
+    </div>
+  </div>
+</div>    
+    </div>
+    
+  </div>
+</div>
+<!-----------------------------------fin bloc4-------------------------------->
+<!-------------------------------------debut bloc5-------------------------------->
+<div class="container">
+  <div class="row " id="bloc1">
+    <div class="col-md-4 col-sm-6  ">
+         <div class="card mb-3" style="max-width: 540px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="img/mobilité/releve-jambe-gauche-pour-fauteuil-classic-light (1).jpg" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">releve-jambe-gauche-pour-fauteuil-classic-light</h5>
+        <p class="card-text">Repose-pied Accessoire pour le fauteuil Classic. Permet</p>
+<h6>59,50 dt</h6>
+        <button type="button" class="btn btn-secondary">Ajouter au panier</button>
+
+    </div>
+    </div>
+  </div>
+</div> 
+    </div>
+     <div class="col-md-4 col-sm-6  ">
+          <div class="card mb-3" style="max-width: 540px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="img/mobilité/sangle-universelle-pour-birdie.jpg" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">sangle-universelle-pour-birdie</h5>
+        <p class="card-text">Sangle pour lève personne Birdie, 3 tailles disponibles</p>
+<h6>139,00 dt</h6>
+        <button type="button" class="btn btn-secondary">Ajouter au panier</button>
+
+    </div>
+    </div>
+  </div>
+</div>
+    </div>
+     <div class="col-md-4 col-sm-6  ">
+      <div class="card mb-3" style="max-width: 540px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="img/mobilité/potence-sur-pied-pliable.jpg" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">potence-sur-pied-pliable</h5>
+        <p class="card-text">Cette potence vous aidera à vous relever ou vous</p>
+<h6>172,90 dt</h6>
+        <button type="button" class="btn btn-secondary">Ajouter au panier</button>
+
+    </div>
+    </div>
+  </div>
+</div>    
+    </div>
+    
+  </div>
+</div>
+<!---------------------------------------fin bloc5--------------------------------->
+<!----------------------------------------debut bloc6-------------------------------->
+<div class="container">
+  <div class="row " id="bloc1">
+    <div class="col-md-4 col-sm-6  ">
+         <div class="card mb-3" style="max-width: 540px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="img/mobilité/alarme-sans-fil-deux-pendentifs.jpg" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">alarme-sans-fil-deux-pendentifs</h5>
+        <p class="card-text">Accessoires de sécurité Cette alarme peut être utilisée.</p>
+<h6>62,00 dt</h6>
+        <button type="button" class="btn btn-secondary">Ajouter au panier</button>
+
+    </div>
+    </div>
+  </div>
+</div> 
+    </div>
+     <div class="col-md-4 col-sm-6  ">
+          <div class="card mb-3" style="max-width: 540px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="img/mobilité/alarme-personnelle.jpg" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">alarme-personnelle</h5>
+        <p class="card-text">Renforcer votre sécurité Permet de déclencher une alarme.</p>
+<h6>13,00 dt</h6>
+        <button type="button" class="btn btn-secondary">Ajouter au panier</button>
+
+    </div>
+    </div>
+  </div>
+</div>
+    </div>
+     <div class="col-md-4 col-sm-6  ">
+      <div class="card mb-3" style="max-width: 540px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="img/mobilité/balise-gps-weenect-silver.jpg" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">balise-gps-weenect-silver</h5>
+        <p class="card-text">La balise GPS Weenect Silver reste connectée en temps</p>
+<h6>125,00 dt</h6>
+        <button type="button" class="btn btn-secondary">Ajouter au panier</button>
+
+    </div>
+    </div>
+  </div>
+</div>    
+    </div>
+    
+  </div>
+</div>
+<!----------------------------------------fin bloc6----------------------------->
+
+<!------------------------------------debut footer----------------------------->
+<footer class="border border-danger" style="background-color: orange;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-12">
+        <h4>Adresse:</h4>
+        <p>78a Avenue de la république
+          68000 COLMAR</p>
+          <p>(+216) 71 528 668 / (+216) 71 624 999</p>
+          <p>espoirtunisie@gmail.com</p>
+
+      </div>
+     <div class="col-md-3 col-sm-12">
+        <h4>Insecrivez-vous:</h4>
+         <!-- Button trigger modal -->
+    <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModal2">
+  insecrivez-vous
+    </button>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+    <div class="modal-body">
+      <form action="/action_page.php">
+        <div class="form-group">
+          <label for="text">Prénom:</label>
+          <input type="text" class="form-control" id="Prénom">
+        </div>
+        <div class="form-group">
+          <label for="text">Nom:</label>
+          <input type="text" class="form-control" id="Nom">
+        </div>
+        <div class="form-group">
+          <label for="email">Email address:</label>
+          <input type="email" class="form-control" id="email">
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" id="pwd">
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox"> Remember me</label>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form> 
+    </div>
+    <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    <button type="button" class="btn btn-primary">Save changes</button>
+    </div>
+    </div>
+    </div>
+    </div>
+                  </li>
+                </ul>
+      </div>
+      <div class="col-md-3 col-sm-12">
+        <h4>Suivez-nous:</h4>
+        <a href=""><img src="img/icons8-facebook-24.png" alt=""></a>
+        <a href=""><img src="img/icons8-instagram-24.png" alt=""></a>
+        <a href=""><img src="img/icons8-twitter-24.png" alt=""></a>
+
+      </div>
+      <div class="col-md-3 col-sm-12">
+       <h4> Rejoigner-nous:</h4>
+       <iframe style="border: 0;" src="https://www.facebook.com/AssociationEspoirCOLMAR" width="300" height="250" frameborder="0"></iframe>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
