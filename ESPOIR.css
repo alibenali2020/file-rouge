@@ -8,10 +8,10 @@
 footer {
 }
 .navbar {
-  background-color: transparent;
+  background-color: #B3E5FC;
   box-shadow: 0 2px;
-
-  padding-bottom: 10%;
+  padding-bottom: 2%;
+  
 }
 .navbar:hover {
   opacity: 0, 7;
@@ -40,9 +40,7 @@ footer {
 .logo3 {
   width: 30px;
 }
-h2,
-h3,
-h5 {
+h2,h3,h5 {
   color: orange;
 }
 .card-body {
@@ -84,11 +82,12 @@ table:hover {
   padding-bottom: 1%;
 }
 
+
 .forum1 {
-  background-color: rgb(180, 160, 92);
+  background-color:#2196F3 ;
 }
-.forum1 {
-  background-color: rgb(31, 188, 194);
+.forum2 {
+  background-color: #f0f3f7
 }
 .liste-horaire {
   list-style: none;
@@ -103,14 +102,32 @@ table:hover {
   background-image: url(https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500);
   border-radius: 2%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+  background-size: cover;
 }
 #contact-form2 {
   background-image: url(https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500);
   border-radius: 2%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+    background-size: cover;
 }
 
 #panierlogo {
   width: 2rem;
   height: 2rem;
+}
+.mobilité {
+  width: 100%;
+  height: 100%;
+}
+.cuisine{
+  width: 100%;
+  height: 100%;
+}
+.confort{
+  width: 100%;
+  height: 100%;
+}
+.fb-page{
+  width: 100%;
+  
 }
